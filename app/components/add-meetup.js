@@ -14,7 +14,6 @@ export default Ember.Component.extend({
         name: this.get('name'),
         image: this.get('image'),
         description: this.get('description'),
-        specialty: this.get('specialty'),
         url: this.get('url'),
         categories: categoriesArray
       };
@@ -23,7 +22,6 @@ export default Ember.Component.extend({
       this.set('name', "");
       this.set('image', "");
       this.set('description', "");
-      this.set('specialty', "");
       this.set('categories', "");
       this.set('url', "");
     }

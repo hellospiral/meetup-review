@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  myMeetups: Ember.inject.service(),
+
   model(params) {
     return Ember.RSVP.hash({
       meetup: this.store.findRecord('meetup', params.meetup_id),
@@ -9,6 +11,10 @@ export default Ember.Route.extend({
   },
 
   actions: {
+    addToMyMeetups(item) {
+      this.get('myMeetups').add(item);
+    },
+
     save3(params) {
       var newReview = this.store.createRecord('review', params);
       var meetup = params.meetup;

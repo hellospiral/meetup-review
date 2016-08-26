@@ -1,0 +1,41 @@
+{{#if addMeetup}}
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="name">Meetup Name</label>
+        {{input class="form-control" value=name id="name"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{textarea class="form-control" value=image id="image"}}
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        {{input class="form-control" value=description id="description"}}
+      </div>
+
+      <div class="form-group">
+        <label for="specialty">What does your meetup specialize in?</label>
+        {{input class="form-control" value=specialty id="specialty"}}
+      </div>
+
+      <div class="form-group">
+        <label for="categories">Tags for your meetup:</label>
+        {{input class="form-control" value=categories id="categories" placeholder="tag1, tag2, etc..."}}
+      </div>
+
+      <div class="form-group">
+        <label for="url">URL for the meetup:</label>
+        {{input class="form-control" value=url id="url" placeholder="on meetup.com or your own website..."}}
+      </div>
+
+
+      <button class="btn btn-primary btn-sm" {{action 'add'}}>Save</button>
+
+    </form>
+  </div>
+{{else}}
+  <button class = "btn btn-primary btn-lg" {{action 'addMeetupShow'}}>Add</button>
+{{/if}}

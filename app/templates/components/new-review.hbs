@@ -1,6 +1,5 @@
 <div class="container">
   {{#if addNewReview}}
-    <h1>New Review</h1>
       <div>
         <form>
           <div class="form-group">
@@ -14,8 +13,9 @@
           </div>
 
           <div class="form-group">
-            <label for="rating">Rating</label>
-            {{input class="form-control" value=rating id="rating"}}
+            <label for="rating">Rating: {{displayRatingProperty}} </label>
+            {{star-rating class = "yellowStars" item=ratingProperty rating=5 on-click="updateRating"}}
+            <!-- {{input class="form-control" value=rating id="rating"}} -->
           </div>
 
           <button class="btn btn-primary btn-outline" {{action 'save1'}}>Save</button>

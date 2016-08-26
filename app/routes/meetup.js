@@ -2,6 +2,20 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('meetup', params.meetup_id);
+    return Ember.RSVP.hash({
+      meetup: this.store.findRecord('meetup', params.meetup_id),
+      reviews: this.store.findAll('review')
+    });
   },
+
+  actions: {
+    save3(params) {
+      var newReview = this.store.createRecord('review', params);
+      var meetup = params.meetup;
+      meetup.get('reviews').addObject(newReview);
+      newReview.save().then(function() {
+        return meetup.save();
+      });
+    }
+  }
 });

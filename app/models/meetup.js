@@ -6,5 +6,6 @@ export default DS.Model.extend({
   specialty: DS.attr(),
   categories: DS.attr(),
   url: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+  reviews: DS.hasMany('review', {async: true})
 });

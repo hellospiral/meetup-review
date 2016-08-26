@@ -1,4 +1,6 @@
-<h2>{{model.name}}</h2>
-<img src="{{model.image}}">
-<h4>{{model.description}}</h4>
+<h2>{{model.meetup.name}}</h2>
+<img src="{{model.meetup.image}}">
+<h4>{{model.meetup.description}}</h4>
 <a href="{{model.url}}"></a>
+<hr>
+{{new-review meetup=model.meetup save2="save3"}}

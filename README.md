@@ -1,7 +1,32 @@
-# Meetup-review
+# Meetup Review
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Meetup Review is a simple web app created in EmberJS to post and review meetups. The app allows a user to review existing meetups, add new ones, and save their favorites. It uses Firebase and Ember data to implement relational data storage.
+
+## Project Objectives
+
+* The project contains at least one functioning computed property.
+
+* A service has been implemented successfully.
+
+* At least one custom helper is being used to format data.
+
+* Data is stored in and retrieved from Ember Data models and Firebase.
+
+* Components are used to create display and behavior for your templates.
+
+* One-to-many relationship exists between Meetups and Reviews.
+
+## Technologies used:
+
+* Ember
+* Node
+* Bower
+* Sass
+* Firebase
+* Bootstrap
+* Javascript
+* HTML
+* CSS
 
 ## Prerequisites
 
@@ -39,9 +64,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
@@ -51,3 +73,8 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2016 Matt Carlson

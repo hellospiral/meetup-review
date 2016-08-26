@@ -1,0 +1,18 @@
+<div class="container">
+  <h1><a href="{{meetup.url}}">{{meetup.name}}</a></h1>
+  <br>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{{meetup.image}}">
+    </div>
+    <div class="col-md-6">
+      <h5>{{meetup.description}}</h5>
+      <hr>
+      <p>Our interests:</p>
+      {{#each meetup.categories as |tag|}}
+      <h6>{{tag}}</h6>
+      {{/each}}
+    </div>
+  </div>
+</div>
+<hr>

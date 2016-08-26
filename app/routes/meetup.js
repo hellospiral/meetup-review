@@ -13,6 +13,7 @@ export default Ember.Route.extend({
   actions: {
     addToMyMeetups(item) {
       this.get('myMeetups').add(item);
+      this.transitionTo('my-meetups');
     },
 
     save3(params) {

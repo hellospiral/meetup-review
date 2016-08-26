@@ -1,7 +1,10 @@
+<br>
+<h2>Reviews:</h2>
 {{#if meetup.reviews}}
-  <h2> Reviews:</h2>
   <h3>Average rating: {{averageRating}}</h3>
   <hr>
+{{else}}
+  <h5>No reviews yet for {{meetup.name}}</h5>
 {{/if}}
 
 {{#each meetup.reviews as |review|}}

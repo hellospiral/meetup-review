@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container form-container">
   {{#if addNewReview}}
       <div>
         <form>
@@ -22,6 +22,8 @@
         </form>
       </div>
   {{else}}
-      <button class="btn btn-primary btn-outline" {{action 'reviewFormShow'}}>New Review</button>
+    <div class="wrapper">
+      <button class="btn btn-primary btn-lg btn-outline" {{action 'reviewFormShow'}}>New Review</button>
+    </div>
   {{/if}}
 </div>

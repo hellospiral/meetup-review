@@ -1,6 +1,18 @@
-<h2>Your meetups:</h2>
-<ul>
-  {{#each myMeetups.meetups as |meetup|}}
-    <li>{{meetup.name}}</li>
-  {{/each}}
-</ul>
+{{#if myMeetups.meetups}}
+  <h2>Your meetups:</h2>
+  <div class="well meetupList">
+    <ul class="list-group">
+      {{#each myMeetups.meetups as |meetup|}}
+        <li class="list-group-item">
+          {{#link-to 'meetup' meetup.id}}
+            <h5>{{meetup.name}}</h5>
+            <img class="thumbnail" src={{meetup.image}}>
+          {{/link-to}}
+          <button class="btn btn-danger btn-sm btn-outline" {{action 'removeMeetup' meetup}}>Remove</button>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+{{else}}
+  <p>You haven't saved any meetups yet!</p>
+{{/if}}

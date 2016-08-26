@@ -5,5 +5,9 @@ export default Ember.Service.extend({
 
   add(meetup) {
     this.get('meetups').pushObject(meetup);
+  },
+
+  remove(meetup) {
+    this.get('meetups').removeObject(meetup);
   }
 });

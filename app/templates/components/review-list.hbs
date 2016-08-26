@@ -1,0 +1,14 @@
+{{#if meetup.reviews}}
+  <h2> Reviews:</h2>
+  <!-- <h3>Average rating: {{averageRating}}</h3> -->
+  <hr>
+{{/if}}
+
+{{#each meetup.reviews as |review|}}
+  <blockquote>
+    <h3>{{review.rating}}</h3>
+    <p>"{{review.comment}}"</p>
+    <footer>{{review.username}} <p>{{review.timestamp}}</p></footer>
+  </blockquote>
+  <hr>
+{{/each}}

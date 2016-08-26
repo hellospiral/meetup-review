@@ -1,0 +1,23 @@
+{ "meetups": [{
+    "name": "Portland ReactJS",
+    "specialty": "ReactJS",
+    "categories": ["Javascript", "web development", "ReactJS"],
+    "url": "https://www.meetup.com/Portland-ReactJS/",
+    "image": "https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/a/b/8/9/global_434023913.jpeg",
+    "description": "This is a group for anyone who has experience working with the Facebook React library or would like to learn more about it. We (usually) host meetings on a monthly basis. There is room for reactivists to share their war stories, give lightning talks, share cool tricks/projects and more."
+  }, {
+    "name": "Portland Python User Group",
+    "specialty": "Python",
+    "categories": ["computer programming", "Python"],
+    "url": "https://www.meetup.com/pdxpython/",
+    "image": "https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/5/3/4/3/global_7161315.jpeg",
+    "description": "Socialize with other Python programming enthusiasts, check out presentations on Pythonic topics, maybe participate in a code sprint or two, possibly work on projects and provide mutual technical support."
+  }, {
+    "name": "Portland Ruby Brigade",
+    "specialty": "Ruby",
+    "categories": ["computer programming", "Ruby"],
+    "url": "https://www.meetup.com/Portland-Ruby-Brigade/",
+    "image": "https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/a/b/b/c/global_441283964.jpeg",
+    "description": "The Portland Ruby Brigade, also known as pdxruby and pdx.rb, is a user group for Ruby programmers in the Portland, Oregon area. The group welcomes all programmers interested in the language and its implementations, tools, libraries and frameworks, such as Ruby on Rails. The group has been meeting since August 2002 for presentations, demos and discussions applicable to all skill levels, from newbies and experts. Every month 50-75 people come together to share their knowledge, projects and enthusiasm for Ruby – join us!"
+  }]
+}

@@ -1,13 +1,11 @@
-<h1>Welcome to Meetup Review!</h1>
+<div class="container">
+  <div class="row">
+    {{#each model as |meetup|}}
+      <div class="col-sm-4 gridCard">
+        {{meetup-tile class="meetupCard" meetup=meetup}}
+      </div>
+    {{/each}}
+  </div>
+</div>
 
-<ul>
-{{#each model as |meetup|}}
-  <li>{{#link-to 'meetup' meetup.id}} {{meetup.name}} {{/link-to}}</li>
-{{/each}}
-</ul>
-
-<h3>Add a new meetup:</h3>
 {{add-meetup add="add"}}
-
-
-{{display-my-meetups}}

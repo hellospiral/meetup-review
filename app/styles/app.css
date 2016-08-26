@@ -1,3 +1,28 @@
 .yellowStars {
   color: #fdec03;
 }
+
+.meetupPic {
+  display: block;
+  margin: auto;
+}
+
+.meetupCard {
+  height: 280px;
+}
+
+.meetupTitleText {
+  text-align: center;
+}
+
+.gridCard {
+  margin-bottom: 10px;
+}
+
+.newMeetupButton {
+  margin: 50px;
+}
+
+.wrapper {
+    text-align: center;
+}

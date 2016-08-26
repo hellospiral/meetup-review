@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'fitness-review',
+    modulePrefix: 'meetup-review',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

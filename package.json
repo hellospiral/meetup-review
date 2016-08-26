@@ -1,7 +1,7 @@
 {
-  "name": "fitness-review",
+  "name": "meetup-review",
   "version": "0.0.0",
-  "description": "Small description for fitness-review goes here",
+  "description": "Small description for meetup-review goes here",
   "private": true,
   "directories": {
     "doc": "doc",
